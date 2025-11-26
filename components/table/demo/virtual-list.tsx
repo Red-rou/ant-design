@@ -36,7 +36,7 @@ const fixedColumns: TableProps<RecordType>['columns'] = [
     width: 120,
     render: (_, record) => `Group ${Math.floor(record.id / 4)}`,
     onCell: (record) => ({
-      rowSpan: record.id % 4 === 0 ? 4 : 0,
+      rowSpan: record.id % 14 === 0 ? 14 : 0,
     }),
   },
   {
